@@ -16,7 +16,6 @@ namespace Task1_POE
 
         }
 
-
         public int X
         {
             get { return x; }
@@ -68,7 +67,6 @@ namespace Task1_POE
         public override void Combat(Unit enemy)
         {
 
-           // MessageBox.Show("wizard combat "+ team );
             if (enemy.attackRange == 4)
             {
 
@@ -113,9 +111,6 @@ namespace Task1_POE
                 distance = (Math.Abs(x - cEnemy.X) + Math.Abs(y - cEnemy.Y));
             }
 
-
-
-            //MessageBox.Show(distance.ToString() + enemy.ToString());
             return distance;
 
         }
@@ -135,12 +130,12 @@ namespace Task1_POE
             {
                 case 1:
                     wizard.team = "Blue";
-                    //   teamColour="Blue";
+                  
                     break;
 
                 case 2:
                     wizard.team = "Yellow";
-                    // teamColour = "Green";
+                    
                     break;
 
             }// team assigning
@@ -163,7 +158,6 @@ namespace Task1_POE
 
         public override void MoveUnit(int mx, int my)
         {
-           // MessageBox.Show(mx.ToString() + " "+ my.ToString()+ " "+ team);
             if ((mx + speed < 20) && (mx - speed < 0) && (my + speed < 20) && (my - speed < 0))
             {
                 if (mx > 0 && mx + speed < 20)
@@ -195,9 +189,6 @@ namespace Task1_POE
             int distance = 0;
             int distancer = 0;
 
-
-
-
             foreach (MeleeUnit u in enemyM)
             {
                 if (u != null)
@@ -225,8 +216,6 @@ namespace Task1_POE
                     }
                 }
 
-
-
             }
             count = 0;
             foreach (RangedUnit u in enemyR)
@@ -250,8 +239,6 @@ namespace Task1_POE
                                 rEnemy = u;
 
                             }
-
-
                         }
                     }
                 }
@@ -260,7 +247,6 @@ namespace Task1_POE
 
             }
 
-            //MessageBox.Show(rEnemy.ToString());
             if (distance > distancer)
             {
                 return rEnemy;
@@ -270,7 +256,6 @@ namespace Task1_POE
             {
                 return MEnemy;
             }
-
 
         }
 

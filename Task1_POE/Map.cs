@@ -25,10 +25,7 @@ namespace Task1_POE
         public void NewBattlefield()
         {
 
-
-            //Map GameMap = new Map();
             Random r = new Random();
-
 
             int melee = 5;
             int ranged = 5;
@@ -149,14 +146,11 @@ namespace Task1_POE
                 }
             }
 
-          
             // mover units to new location in 2d array
         }
 
         public string Update(int X, int Y)
         {
-
-          
 
             return unitMap[X,Y];
             // show the new map in the lable

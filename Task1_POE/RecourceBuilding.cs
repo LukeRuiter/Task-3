@@ -63,7 +63,6 @@ namespace Task1_POE
             set { symbol = value; }
         }
 
-
         public override void Constructor(int bX, int bY, string bTeam)
         {
             x = bX;
@@ -74,8 +73,7 @@ namespace Task1_POE
             remaining = 100;
             health = 50;
             symbol = 'G';
-
-         
+ 
         }
 
         public override void Destroy()
@@ -94,7 +92,6 @@ namespace Task1_POE
             display = display + "Recources remaining: " + remaining + "\n";
             display = display + "X position: " + x.ToString() + "\n";
             display = display + "Y position: " + y.ToString() + "\n";
-
 
             return display;
             
