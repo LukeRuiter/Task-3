@@ -137,12 +137,6 @@ namespace Task1_POE
                 }
            
 
-                
-            
-
-            
-
-
         }// movement
 
         public override void Combat(Unit Enemy)
